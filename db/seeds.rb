@@ -8,6 +8,6 @@
 
 User.destroy_all
 
-u1 = User.create!({email: "june@gmail.com", password: "password"});
+u1 = User.create!({name: 'june', email: "june@gmail.com", password: "password"});
 
 # u1 = User.create!({email: "garfield1@cat.com", password: "password"})
