@@ -4,25 +4,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-    // background: whitesmoke;
     background: rgba(0,0,0,0.65);
     border-radius: 5px;
     widows: 50px;
     padding: 0 90px 45px;
     flex-basis: 0;
     text-align: center;
-    // display: block;
-    // height: auto;
-    // text-align: center;
-    // margin-left: auto;
-    // margin-right: auto;
-    // width: 25%;
-    // background: rgba(0,0,0,0.65);
-    // border-radius: 5px;
-    // widows: 50px;
-    // padding: 50px;
-    // flex-basis: 0;
-    // overflow: auto;
+   
 }
 
 .login-btn-text {
@@ -107,8 +95,16 @@
     justify-content: center;
 }
 
+
 .login-btn-text {
     color: white;
+}
+
+
+.signup-session .login-btn-text:hover {
+    background-color: whitesmoke;
+    color: #b7bfc6;
+    border: none;
 }
 
 .label-text {

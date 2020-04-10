@@ -27,10 +27,19 @@ class SessionForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        const user = Object.assign({}, this.state);
-        this.props.processForm(user);
-    }
+        if (e.currentTarget.value === "Demo Log In") {
+            const demoUser = {
+                email: "june@gmail.com",
+                password: "password"
+            }
 
+        this.props.processForm(demoUser)
+        } else {
+            const user = Object.assign({}, this.state);
+            this.props.processForm(user);
+        }
+
+    }
 
 
     render() {
@@ -43,8 +52,9 @@ class SessionForm extends React.Component {
                     <div className="outer-box">
                         <div className="login-box">
                             <header className="login-logo">Log In</header>
-
-                            <form onSubmit={this.handleSubmit}>
+                                
+                            <form>
+                                {/* onSubmit={this.handleSubmit} */}
                             <label className="label-text">Email Address
                             <input className="login-input" type="text" value={this.state.email} onChange={this.update("email")} />
                             </label>
@@ -56,9 +66,9 @@ class SessionForm extends React.Component {
                                 {this.props.errors.map((error, i) => <li className="login-error" key={i}>{error}</li>)}
                             </ul>
 
-                                <input type="submit" className="login-btn" value="Log In"/>
+                                <input type="submit" onClick={this.handleSubmit} className="login-btn" value="Log In"/>
+                                <input type="submit" onClick={this.handleSubmit} className="demo" value="Demo Log In"/>
                             </form>
-
 
                         </div>
                             <div className="login-session">

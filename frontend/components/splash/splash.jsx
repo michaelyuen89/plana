@@ -17,6 +17,17 @@ class Splash extends React.Component {
                     <video className='video-tag' autoPlay loop muted>
                         <source src={asanaVideo} type='video/mp4' />
                     </video>
+                    {/* uncomment iframe here and in splash.jsx */}
+                    {/* <iframe
+                        width="560"
+                        height="700"
+                        src="https://www.youtube.com/embed/8vy0lhXFfIg" 
+                        frameBorder="0"
+                        autoPlay
+                        allowFullScreen
+                        title="slackvideo"
+                        className="slackvid"
+                    /> */}
                 </div>
 
                 <div className="splash-footer">

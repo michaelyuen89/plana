@@ -1,0 +1,38 @@
+
+
+
+.sidebar-container {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #151b26;
+    flex-direction: column;
+    color: #d5dce0;
+    max-width: 244px;
+    min-width: 244px;
+    height: 100vh;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.sidebar-logo {
+    background-size: 80px 16px;
+    display: flex;
+}
+
+.plana-logo {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar-logo-text {
+    font-size: 20px;
+}
+.sidebar-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

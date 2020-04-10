@@ -56,6 +56,12 @@
     text-decoration: none;
 }
 
+.login-session .signup-btn-text:hover {
+    background-color: whitesmoke;
+    color: #b7bfc6;
+    border: none;
+}
+
 .login-logo {
     font-weight: 800;
     font-size: 32px;
@@ -75,6 +81,25 @@
 }
 
 .login-btn {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to top right, 
+    rgba(240, 14, 14, 0.9) 10%, 
+    rgba(255, 115, 129, 0.9) 65%, 
+    rgba(252, 189, 1, 0.9) 105%);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    padding: 15px 0px;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.demo {
     display: inline-block;
     justify-content: center;
     text-align: center;
