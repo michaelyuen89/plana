@@ -1,4 +1,5 @@
 class Api::SessionsController < ApplicationController
+    skip_before_action :verify_authenticity_token
 
     before_action :ensure_logged_in, only: [:destroy]
 
@@ -11,16 +12,16 @@ class Api::SessionsController < ApplicationController
             login!(@user)
             redirect_to api_user_url(@user)
         else
-            render json: ["Invalid email/password credentials. Please try again."], status: 401
+            render json: ["The username or password is not correct."], status: 401
         end
     end
 
 
     def destroy
         if current_user
-            log_out!
+            logout!
         else
-            render json: ["No user is currently logged in"], status: 404
+            render json: ["You must be logged in"], status: 404
         end
     end
 end

@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+  body {
+    font-family: 'Poppins', sans-serif;
+ }
+/* 
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  } */
+
+ @import "reset.scss";
+ @import "components/*";
+

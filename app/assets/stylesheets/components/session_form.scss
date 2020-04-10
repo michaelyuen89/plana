@@ -1,0 +1,140 @@
+body {
+    // display: block;
+    // background: linear-gradient(to top right, 
+    // rgba(20, 200, 255, 0.9) 10%, 
+    // rgba(33, 255, 207, 0.9) 65%, 
+    // rgba(248, 240, 133, 0.9) 105%);
+    // height: 100vh;
+}
+
+// main {
+//     height: 100%;
+// }
+
+.signup {
+    background: linear-gradient(to top right, 
+    rgba(20, 200, 255, 0.9) 10%, 
+    rgba(33, 255, 207, 0.9) 65%, 
+    rgba(248, 240, 133, 0.9) 105%);
+    height: 100vh;
+}
+
+.logo-header {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    margin: 0px 0px 30px -5px;
+    
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.login-box {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    // background: whitesmoke;
+    background: rgba(0,0,0,0.65);
+    border-radius: 5px;
+    widows: 50px;
+    padding: 0 90px 45px;
+    flex-basis: 0;
+    text-align: center;
+}
+
+
+.signup-btn-text {
+    align-items: center;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 13px;
+    justify-content: center;
+    min-width: 50px;
+    padding: 0 10px;
+    margin-top: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.login-logo {
+    font-weight: 800;
+    font-size: 32px;
+    padding: 45px 30px 30px;
+    color: whitesmoke;
+}
+
+.login-input {
+    background: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.login-btn {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to top right, 
+    rgba(240, 14, 14, 0.9) 10%, 
+    rgba(255, 115, 129, 0.9) 65%, 
+    rgba(252, 189, 1, 0.9) 105%);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    padding: 15px 0px;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.login-box .login-btn:hover {
+    background: linear-gradient(to top right, 
+    rgba(240, 14, 14, 0.75) 10%, 
+    rgba(255, 115, 129, 0.75) 65%, 
+    rgba(252, 189, 1, 0.75) 105%);
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.login-session {
+    display: flex;
+    justify-content: center;
+}
+
+.new-account {
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-right: 8px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.signup-btn {
+    color: rgb(20, 89, 236);
+}
+
+.label-text {
+    font-size: 12px;
+    text-align: left;
+    color: whitesmoke;
+}

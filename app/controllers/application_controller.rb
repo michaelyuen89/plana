@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
 
+    protect_from_forgery with: :exception
+
       #CHELL
     helper_method :current_user, :logged_in? 
     

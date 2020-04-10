@@ -1,0 +1,65 @@
+.nav-header {
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+
+.menu-bar {
+    display: flex; 
+    justify-content: flex-end; 
+    background:  #fffdfd;
+    height: 70px;
+}
+
+
+.plana-logo {
+  height: 30px;
+  align-self: center;
+}
+
+
+.logo-nav {
+  position: absolute; 
+  left: 0; 
+  margin-left: 20px; 
+  margin-top: 10px; 
+  display: flex; 
+}
+
+.plana {
+  padding: 4px 10px;
+  font-size: 30px;
+  margin: 0;
+}
+
+
+.login-link {
+  text-decoration: none;
+  background: none;
+  color: #646f79;
+  display: inline-block;
+  height: 100%;
+  letter-spacing: 0;
+  font-size: 18px;
+  line-height: 70px;
+  padding-right: 10px;
+}
+
+.signup-btn-nav {
+    background-color: #796eff;
+    font-size: 15px; 
+    padding: 10px 20px; 
+    margin: 12px; 
+    border: 1px solid lightgray; 
+    border-radius: 4px; 
+    color: whitesmoke; 
+    cursor: pointer; 
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu-bar .signup-btn-nav:hover {
+    background-color: #6057c2;
+}
