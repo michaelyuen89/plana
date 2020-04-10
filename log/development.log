@@ -11805,3 +11805,14 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2020-04-10 11:40:05 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/macbook/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered static_pages/root.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 2011ms (Views: 2004.0ms | ActiveRecord: 4.4ms)
+
+
