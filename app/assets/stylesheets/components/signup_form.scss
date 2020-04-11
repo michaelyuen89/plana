@@ -9,7 +9,7 @@
     widows: 50px;
     padding: 0 90px 45px;
     flex-basis: 0;
-    text-align: center;
+    // text-align: center;
    
 }
 
@@ -32,11 +32,12 @@
 }
 
 
-.signup-logo {
+.signup-header {
     font-weight: 800;
     font-size: 32px;
     padding: 45px 30px 30px;
     color: whitesmoke;
+    text-align: center;
 }
 
 .signup-input {
@@ -105,10 +106,4 @@
     background-color: whitesmoke;
     color: #b7bfc6;
     border: none;
-}
-
-.label-text {
-    font-size: 12px;
-    text-align: left;
-    color: whitesmoke;
 }

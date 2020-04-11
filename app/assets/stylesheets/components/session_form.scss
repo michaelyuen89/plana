@@ -2,24 +2,10 @@
 
 .signup {
     background: linear-gradient(to top right, 
-    rgba(20, 200, 255, 0.9) 10%, 
-    rgba(33, 255, 207, 0.9) 65%, 
-    rgba(248, 240, 133, 0.9) 105%);
+    rgba(16, 166, 211, 0.9) 10%, 
+    rgba(28, 216, 175, 0.9) 65%, 
+    rgba(214, 208, 115, 0.9) 105%);
     height: 100vh;
-}
-
-.logo-header {
-    position: relative;
-    top: 15px;
-    text-align: center;
-    margin: 0px 0px 30px -5px;
-    
-}
-
-.logo {
-    text-decoration: none;
-    font-size: 30px;
-    color: whitesmoke;
 }
 
 .login-box {
@@ -34,8 +20,32 @@
     widows: 50px;
     padding: 0 90px 45px;
     flex-basis: 0;
-    text-align: center;
 }
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    margin: 0px 0px 30px -5px;
+    text-shadow: rgba(0,0,0,0.65);
+    
+}
+
+.logo-session {
+    height: 30px;
+    align-self: center;
+    padding-right: 10px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+    // text-shadow: rgba(0,0,0,0.65);
+}
+
 
 
 .signup-btn-text {
@@ -62,11 +72,13 @@
     border: none;
 }
 
-.login-logo {
+.login-header {
     font-weight: 800;
     font-size: 32px;
     padding: 45px 30px 30px;
     color: whitesmoke;
+    text-align: center;
+
 }
 
 .login-input {

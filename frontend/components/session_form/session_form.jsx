@@ -27,7 +27,7 @@ class SessionForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        if (e.currentTarget.value === "Demo Log In") {
+        if (e.currentTarget.value === "Demo User") {
             const demoUser = {
                 email: "june@gmail.com",
                 password: "password"
@@ -47,11 +47,12 @@ class SessionForm extends React.Component {
             return (
                 <div className="signup">
                     <div className="logo-header">
+                        <img className="logo-session" src={window.planaLogo} />
                         <Link className="logo" to="/" >plana</Link>
                     </div>
                     <div className="outer-box">
                         <div className="login-box">
-                            <header className="login-logo">Log In</header>
+                            <header className="login-header">Log In</header>
                                 
                             <form>
                                 {/* onSubmit={this.handleSubmit} */}
@@ -67,7 +68,7 @@ class SessionForm extends React.Component {
                             </ul>
 
                                 <input type="submit" onClick={this.handleSubmit} className="login-btn" value="Log In"/>
-                                <input type="submit" onClick={this.handleSubmit} className="demo" value="Demo Log In"/>
+                                <input type="submit" onClick={this.handleSubmit} className="demo" value="Demo User"/>
                             </form>
 
                         </div>
@@ -84,11 +85,12 @@ class SessionForm extends React.Component {
             return (
                 <div className="signup">  
                     <div className="logo-header">
+                        <img className="logo-session" src={window.planaLogo} />
                         <Link className="logo" to="/" >plana</Link>
                     </div>
                     <div className="outer-box">
                         <div className="signup-box">
-                            <header className="signup-logo">Sign Up</header>
+                            <header className="signup-header">Sign Up</header>
                 
                             <form onSubmit={this.handleSubmit}>
                             <label className="label-text">Name
@@ -124,6 +126,9 @@ class SessionForm extends React.Component {
             <Link to="/"></Link>
         )
     }
+    
 }
 
 export default SessionForm;
+
+
