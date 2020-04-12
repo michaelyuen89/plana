@@ -14,12 +14,18 @@ class Sidebar extends React.Component {
         return (
             <div className="sidebar-container">
                 <div className="sidebar-logo">
-                <img className="plana-logo" src={window.planaLogo} />
-                <h4 className="sidebar-logo-text">plana</h4>
+                    <img className="plana-logo" src={window.planaLogo} />
+                    <Link className="sidebar-logo-text" to="/home" >plana</Link>
                 </div>
-                <div className="sidebar-items">
-                    <Link className="sidebar-home"to="/home">Home</Link>
-                    <Link className="sidebar-tasks"to="/tasks">My Tasks</Link>
+                <div className="sidebar-links">
+                    <Link className="sidebar-link" to="/home">
+                        <i className="fas fa-home"></i>
+                        <div>Home</div>
+                    </Link>
+                    <Link className="sidebar-link"to="/tasks">
+                        <i class="fas fa-check-circle"></i>
+                        <div>My Tasks</div>
+                    </Link>
                 </div>  
             </div>
         )
