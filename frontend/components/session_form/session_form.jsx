@@ -47,7 +47,7 @@ class SessionForm extends React.Component {
             return (
                 <div className="signup">
                     <div className="logo-header">
-                        <img className="logo-session" src={window.planaLogo} />
+                        <img className="logo-session" src={window.planaLogo2} />
                         <Link className="logo" to="/" >plana</Link>
                     </div>
                     <div className="outer-box">
@@ -86,7 +86,7 @@ class SessionForm extends React.Component {
             return (
                 <div className="signup">  
                     <div className="logo-header">
-                        <img className="logo-session" src={window.planaLogo} />
+                        <img className="logo-session" src={window.planaLogo2} />
                         <Link className="logo" to="/" >plana</Link>
                     </div>
                     <div className="outer-box">

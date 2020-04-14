@@ -111,17 +111,19 @@ main {
 }
 
 .review-img {
+    align-self: center;
     max-width: 50%;
     // padding: 50px 50px 50px 50px;
-    box-shadow: 0 20px 30px 0 rgba(36,50,66,.14);
-    margin: 0 16px;
+    // box-shadow: 0 20px 30px 0 rgba(36,50,66,.14);
+    // margin: 0 16px;
 }
 
-.review-img img {
-    display: block;
+.review-img > img {
+    // display: block;
     width: 100%;
-    height: auto;
+    // height: auto;
     object-fit: contain;
+    box-shadow: 0 20px 30px 0 rgba(36,50,66,.14)
 }
 
 
@@ -144,10 +146,10 @@ main {
     color: #fffdfd;
 }
 
-// uncomment out iframe
+// uncomment out iframe here and in splash.jsx
 
 // iframe {
-//     min-height: 700px;
+//     min-height: 500px;
 //     margin-bottom: 200px;
 // }
 

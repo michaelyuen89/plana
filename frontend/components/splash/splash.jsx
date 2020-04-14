@@ -19,22 +19,19 @@ class Splash extends React.Component {
                             <source src={asanaVideo} type='video/mp4' />
                         </video>
                     </div>
-                    {/* uncomment iframe here and in splash.jsx */}
+                    {/* uncomment iframe here and in splash.scss */}
                     {/* <iframe
                         width="560"
-                        height="700"
-                        src="https://www.youtube.com/embed/8vy0lhXFfIg" 
+                        height="500"
+                        src="https://www.youtube.com/embed/8vy0lhXFfIg?autoplay=1" 
                         frameBorder="0"
                         autoPlay
-                        allowFullScreen
-                        title="slackvideo"
-                        className="slackvid"
                     /> */}
                     <div className="splash-reviews">
                         <div className="reviews-text">
                             <h1>Teams love Plana, but don’t take our word for it</h1> 
                             <p className="subheading">Read over 100,000,000 reviews from real customers about how Plana fuels their business success.</p>
-                            <a className="review-link" href="">Read Reviews</a>
+                            <a className="review-link" href="https://nekobook.herokuapp.com/#/nekos/41">Read Reviews</a>
                         </div>
                         <div className="review-img" >
                             <img src={window.planaReview} />
