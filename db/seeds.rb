@@ -7,7 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Project.destroy_all
 
-u1 = User.create!({name: 'june', email: "june@gmail.com", password: "password"});
-
-# u1 = User.create!({email: "garfield1@cat.com", password: "password"})
+u1 = User.create!({name: 'june', email: "june@gmail.com", password: "password"})
+t1 = Team.create!({name: 'team1', description: 'team dummy'})
+p1 = Project.create!({name: 'project1', description: "test project", user_id: u1.id, team_id: t1.id})

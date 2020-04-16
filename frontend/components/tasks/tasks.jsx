@@ -15,9 +15,7 @@ class Tasks extends React.Component {
                 <div className="home-header">
                     <div className="menu-bar">
                         <div className="logo-nav">
-
                         </div>
-                        {/* <button className="openbtn" onClick={() => openNav()}>☰ Open Sidebar</button>   */}
                         <Link className="logout-btn" to="/" onClick={logout}>Log Out</Link>
                     </div>
 
@@ -31,3 +29,5 @@ class Tasks extends React.Component {
 };
 
 export default Tasks;
+
+

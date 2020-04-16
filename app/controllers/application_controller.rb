@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
-
+    skip_before_action :verify_authenticity_token
     protect_from_forgery with: :exception
 
-      #CHELL
+    #CHELL
     helper_method :current_user, :logged_in? 
     
     def current_user
@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
     end
 
     def ensure_logged_in
-        redirect_to new_session_url unless logged_in?
+        render json: ['Not logged in'], status: 401 unless logged_in?
     end 
 
     def logged_in? 
@@ -18,6 +18,7 @@ class ApplicationController < ActionController::Base
     end 
 
     def login!(user)
+        @current_user = user
         session[:session_token] = user.reset_session_token!
     end 
 

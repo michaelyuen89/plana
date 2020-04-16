@@ -1,19 +1,20 @@
 # == Schema Information
 #
-# Table name: projects
+# Table name: teams
 #
 #  id          :bigint           not null, primary key
 #  name        :string           not null
 #  description :string
-#  user_id     :integer          not null
-#  team_id     :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
-require 'test_helper'
+class Team < ApplicationRecord
+    validates :name, presence: true
 
-class ProjectTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+    has_many :users,
+    foreign_key: :user_id
+
+    has_many :projects,
+    foreign_key: :team_id
+
 end

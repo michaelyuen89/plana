@@ -1,0 +1,132 @@
+.project-form-container {
+    // width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+
+.formContainer {
+  border: 1px solid #848f99;
+  background-color: #fff;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px 0 rgba(21, 27, 38, .08);
+  font-size: 13px;
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formTitle {
+  border-bottom: 1px solid #e0e6e8;
+  color: #151b26;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+.formSubContainer {
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  overflow-y: visible;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-table {
+  width: 100%;
+}
+
+.project-name-field {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.project-description-field {
+  display: flex;
+}
+
+.form-field {
+  width: 100%;
+  line-height: 40px;
+  min-height: 40px;
+  font-size: 100%;
+}
+
+.form-label {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  padding-top: 7px;
+  padding-right: 15px;
+}
+
+
+.generic-input {
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #151b26;
+  padding-left: 10px;
+  border: 1px solid #d5dce0;
+}
+
+.spacer {
+  height: 30px;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+  font-size: 100%;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #b1b1b1;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.create-button {
+  border-radius: 4px;
+  padding: 10px 20px 10px 20px;
+}
+
+.fas.fa-times {
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+}
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  color: black;
+}

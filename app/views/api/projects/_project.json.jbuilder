@@ -1,0 +1,1 @@
+json.extract! project, :id, :name, :description, :user_id, :team_id

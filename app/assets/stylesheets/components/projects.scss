@@ -1,0 +1,119 @@
+.project-container {
+    position: relative;
+    left: 244px;
+    width: 100vh;
+    height: 100vh;
+
+    // display: flex;
+    // flex: 1;
+    // flex-direction: column;
+    // min-width: 920px;
+    // position: relative;
+    // height: 100vh;
+    // overflow-y: scroll;
+    // left: 244px;
+
+    //
+    // display: flex;
+}
+
+.project-header {
+    align-items: center;
+    border-bottom: 2px solid #e8ecee;
+    display: flex;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.project-container-content {
+    grid-template-columns: auto auto auto auto auto;
+    display: inline-grid;
+}
+
+
+.project-tile-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.project-tile-outer {
+
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 180px;
+    min-width: 150px;
+    padding: 10px 0;
+    width: 150px;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    -webkit-transition: margin 0.2s ease-out;
+    float: left;
+    margin: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.project-tile-outer:hover {
+    background: rgba(246, 248, 249, 9);
+    transition-duration: .3s;
+    margin-top: 2px;
+}
+
+.project-tile-structure {
+    height: 110px;
+    width: 110px;
+}
+
+
+.project-tile-inner {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background: #fff;
+    border: 2px dashed;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #9ca6af;
+    display: flex;
+    fill: #9ca6af;
+    justify-content: center;
+    position: relative;
+}
+
+.project-tile-inner:hover {
+    background: rgba(246, 248, 249, 9);
+    transition-duration: .3s;
+    margin-top: 2px;
+}
+
+.project-tile-inner > i {
+    color: #151b26
+}
+
+.project-name {
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 0 10px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #151b26;
+    display: -webkit-box;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
+    max-height: 34px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+

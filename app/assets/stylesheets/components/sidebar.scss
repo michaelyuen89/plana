@@ -71,7 +71,7 @@
 }
 
 .sidebar-links .sidebar-link:hover {
-    background-color: #9ca6af;
+    background-color: rgba(255,255,255,.36);
     // background-color: #cbd4db;
     
 }
@@ -83,6 +83,10 @@
 .sidebar-favorites {
     border-bottom: 1px solid #273240;
     padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 
@@ -93,16 +97,23 @@
     box-sizing: border-box;
     display: flex;
     width: 100%;
+    margin: 5px 30px 5px 8px;
     
 }
 
 .sidebar-favorited {
-    display: block;
-    margin: 5px 30px 10px 15px;
+    // display: block;
+    margin: 5px 15px 5px 0px;
     line-height: 17px;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     font-size: 11px;
     color: whitesmoke;
+}
+
+.sidebar-favorites > div:hover {
+    color: #9ca6af;;
 }
 
 .sidebar-invite {
@@ -121,7 +132,7 @@
 
 
 .sidebar-invite-img {
-    display: block;
+    // display: block;
     flex-shrink: 0;
     height: 34px;
     margin: 0 auto;

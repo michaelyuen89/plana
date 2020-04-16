@@ -8,15 +8,6 @@ class Sidebar extends React.Component {
 
     }
 
-    
-
-    // function closeNav() {
-    //     document.getElementsByClassName("sidebar-container").style.width = "0";
-    //     document.getElementsByClassName("menu-bar").style.marginLeft = "0";
-    // }
-
-    
-
     render() {
 
 
@@ -41,7 +32,7 @@ class Sidebar extends React.Component {
                 <div className="sidebar-favorites">
 
                     <div className="sidebar-favorite">Favorites</div>
-                    <div className="sidebar-favorited">Favorite projects by clicking the </div>
+                    <div className="sidebar-favorited">Favorite projects by clicking the <i className="far fa-star"></i></div>
                 </div>
 
                 <div className="sidebar-invite">
