@@ -22,6 +22,7 @@ class Projects extends React.Component {
                 <a href={`#/projects/${project.id}`} className="project-tile-outer">
                   <div className="project-tile-structure">
                     <div className="project-tile-inner-created">
+                        <i className="fas fa-list-alt fa-2x"></i>
                     </div>
                   </div>
                   <div className="project-name">{project.name}</div>
