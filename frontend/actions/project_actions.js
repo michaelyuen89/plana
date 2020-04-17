@@ -29,10 +29,8 @@ export const fetchProject = (id) => dispatch => (
 )
 
 export const createProject = (project) => dispatch => {
-
     return ProjectApiUtil.createProject(project)
-        .then(project => {
-            return dispatch(receiveProject(project))})
+        .then(project => dispatch(receiveProject(project)));
 }
 
 export const updateProject = (project) => dispatch => (

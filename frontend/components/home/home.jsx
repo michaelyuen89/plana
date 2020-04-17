@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Sidebar from '../sidebar/sidebar';
-import Projects from '../projects/projects_container';
+import SidebarContainer from '../sidebar/sidebar_container';
+import ProjectsContainer from '../projects/projects_container';
 
 
 class Home extends React.Component {
@@ -34,10 +34,10 @@ class Home extends React.Component {
         return (
             <div className="home-container">
                 <div className="home-header">
-                    <div>
-                        <Sidebar />
-                    </div>
                     <div className="home-inner-container">
+                    <div>
+                        <SidebarContainer />
+                    </div>
                         <div className="menu-bar">
                             <div className={`dropdown-menu ${this.state.toggle}`} >
                             
@@ -55,7 +55,7 @@ class Home extends React.Component {
                             </div> 
                         </div>
                         <div>
-                            <Projects />
+                            <ProjectsContainer />
                         </div>
                     </div>
                 </div>

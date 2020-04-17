@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import Sidebar from './sidebar'
 
-const msp = state => {
- 
-};
+const msp = state => ({
+    currentUser: state.entities.users[state.session.id]
+});
 
 const mdp = dispatch => ({
     logout: () => dispatch(logout()),

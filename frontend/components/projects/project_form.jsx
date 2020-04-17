@@ -21,14 +21,16 @@ class ProjectForm extends React.Component {
 
     handleSubmit(e) {
         // debugger
-        e.preventDefault();
-        const project = Object.assign({}, this.state);
-        this.props.createProject(project);
+        // e.preventDefault();
+        // const project = Object.assign({}, this.state);
+        // this.props.createProject(project);
     };
 
 
-    createProjectLink() {
-        this.props.createProject(this.state).then((res) => {
+    createProjectLink(e) {
+        e.preventDefault();
+        const project = Object.assign({}, this.state);
+        this.props.createProject(project).then((res) => {
             this.props.history.push(`/projects/${res.project.id}`)
         });
     }
@@ -46,7 +48,7 @@ class ProjectForm extends React.Component {
                 <div className="formContainer">
                     <div className="formTitle">Create a New Project</div>
                     <div className="formSubContainer">
-                        <form onSubmit={this.handleSubmit} className="form">
+                        <form className="form" onSubmit={this.createProjectLink}>
                             <div className="form-table">
                                 <div className="project-name-field">
                                     <label className="form-label">Project Name</label>
@@ -62,7 +64,7 @@ class ProjectForm extends React.Component {
                             </div>
                             <div className="modal-button">
                                 <div>
-                                    <input type="submit" value="Create Project" onClick={this.createProjectLink} className="create-button" />
+                                    <input type="submit" value="Create Project" className="create-button" />
                                 </div>
                             </div>
                         </form>

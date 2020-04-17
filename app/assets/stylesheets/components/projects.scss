@@ -1,8 +1,9 @@
 .project-container {
     position: relative;
     left: 244px;
-    width: 100vh;
-    height: 100vh;
+    width: 110vh;
+    height: 90vh;
+    overflow: scroll;
 
     // display: flex;
     // flex: 1;
@@ -15,6 +16,17 @@
 
     //
     // display: flex;
+}
+
+.project-favorites {
+    align-items: center;
+    border-bottom: 2px solid #e8ecee;
+    display: flex;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px 0;
+    position: relative;
 }
 
 .project-header {
@@ -72,13 +84,28 @@
 }
 
 
-.project-tile-inner {
+.project-tile-inner-new {
     border-radius: 20px;
     height: 100%;
     width: 100%;
     align-items: center;
     background: #fff;
     border: 2px dashed;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #9ca6af;
+    display: flex;
+    fill: #9ca6af;
+    justify-content: center;
+    position: relative;
+}
+
+.project-tile-inner-created {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background:  rgba(16, 166, 211, 0.9);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     color: #9ca6af;

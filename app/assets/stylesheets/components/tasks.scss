@@ -1,0 +1,72 @@
+.task-component-container {
+    height: 90vh;
+    width: 100vh;
+    left: 244px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+
+
+.task--index--container {
+    font-size: 14px;
+    position: relative;
+    height: 80%;
+    width: 80%;
+    min-width: 405px;
+    margin: 15px;
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
+    overflow: auto;
+}
+
+.task--index--header {
+    align-items: center;
+    background: rgba(16, 166, 211, 0.9);
+    border-bottom: 1px solid #e0e6e8;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    flex: 0 0 auto;
+    height: 50px;
+    padding-left: 30px;
+}
+
+.task--index--content {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 auto;
+}
+
+.task--index--footer {
+    height: 15px;
+}
+
+
+.add-task-button {
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    min-width: 50px;
+    text-align: center;
+    transition-duration: .2s;
+    transition-property: background,border,box-shadow,color,fill;
+    border-radius: 4px;
+    background: #fff;
+    border-color: #9ca6af;
+    color: #6f7782;
+    fill: #6f7782;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 9px;
+}

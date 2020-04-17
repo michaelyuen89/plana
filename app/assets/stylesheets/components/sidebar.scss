@@ -116,6 +116,82 @@
     color: #9ca6af;;
 }
 
+.sidebar-workspace {
+    border-bottom: 1px solid #273240;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sidebar-workspace-container {
+    border-bottom: 1px solid #273240;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.sidebar-workspace-name {
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight: 500;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    margin: 5px 30px 5px 8px;
+}
+
+.sidebar-team-members {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+.sidebar-initials {
+    align-items: center;
+    background: center/cover linear-gradient(to top right, 
+    rgba(16, 166, 211, 0.9) 10%, 
+    rgba(28, 216, 175, 0.9) 65%, 
+    rgba(214, 208, 115, 0.9) 105%);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 11px;
+    height: 26px;
+    min-width: 26px;
+    width: 26px;
+    color: white;
+    margin-right: 4px;
+}
+
+.sidebar-initials-empty {
+    align-items: center;
+    background: center/cover rgba(255,255,255,.1);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 11px;
+    height: 26px;
+    min-width: 26px;
+    width: 26px;
+    color: white;
+    margin-right: 4px;
+}
+
+.sidebar-initials-empty:hover {
+    background: center/cover rgba(255,255,255,.36);
+}
+
 .sidebar-invite {
     bottom: 0;
     left: 0;

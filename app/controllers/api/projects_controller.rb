@@ -15,7 +15,7 @@ class Api::ProjectsController < ApplicationController
     def create
         # debugger
         @project = Project.new(project_params)
-        @project.team_id = 1
+        # @project.team_id = 1
         @project.user_id = current_user.id
         # @project = Project.new(name: 'test', description: 'testdes', user_id: 33, team_id: 1)
         
